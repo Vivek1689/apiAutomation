@@ -18,4 +18,9 @@ public class stepdefclass {
         }
 
     }
+
+    @Given("price API is called with currencyCode as {string} and regionCode as {string}")
+    public void priceAPIIsCalledWithCurrencyCodeAsAndRegionCodeAs(String currencyCode, String regionCode) {
+
+    }
 }
