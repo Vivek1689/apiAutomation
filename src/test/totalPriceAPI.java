@@ -30,8 +30,8 @@ public class totalPriceAPI {
         String actualPriceResponse = given().header("Content-Type","application/json").header("api-version","2.0")
                 .body(priceAPIPayload).when().post("/products/totalPrice").then().extract().response().asString();
        JsonPath actualPriceJs = new JsonPath(actualPriceResponse);
-       double actualPrice = actualPriceJs.getDouble("price.value");
-      return actualPrice;
+       return actualPriceJs.getDouble("price.value");
+
     }
 
     public void getExpectedPrice(String plu,String currencyCode){
