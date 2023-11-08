@@ -14,7 +14,7 @@ public class stepdefclass {
         ArrayList<String> productList = (ArrayList<String>) products.getPlu();
         for (String product:productList) {
             double actualPrice = totalpriceapi.getActualPrice(product,currencyCode,regionCode);
-            System.out.println(actualPrice);
+            System.out.println(product+" "+actualPrice);
         }
 
     }
