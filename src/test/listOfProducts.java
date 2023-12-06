@@ -8,7 +8,7 @@ public class listOfProducts {
     public List<String> getPlu(){
         ArrayList<String> productList = new ArrayList<String>();
         productList.add("US-LFB1310-A");
-        productList.add("US-LFB1310-A-ADDPAGE");
+        /*productList.add("US-LFB1310-A-ADDPAGE");
         productList.add("US-LFB1185-A");
         productList.add("US-LFB1185-A-ADDPAGE");
         productList.add("US-LFB1010-A");
@@ -30,7 +30,7 @@ public class listOfProducts {
         productList.add("US-CAL831Z-A");
         productList.add("US-CAL831Z-A-ADDPAGE");
         productList.add("US-FC830Z-A");
-        productList.add("US-PC858Z-A");
+        productList.add("US-PC858Z-A");*/
         return productList;
     }
 }

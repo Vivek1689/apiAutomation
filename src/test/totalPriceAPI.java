@@ -5,6 +5,7 @@ import PojoClasses.PhotobookData;
 import PojoClasses.TotalPriceAPIPayload;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
+import main.excelUtility.readExcelFile;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,6 +36,9 @@ public class totalPriceAPI {
     }
 
     public void getExpectedPrice(String plu,String currencyCode){
+        String ExpectedPriceSheetPath = System.getProperty("user.dir")+"/src/Resources/ExpectedPrice.xlsx";
+        readExcelFile readFile = new readExcelFile(ExpectedPriceSheetPath);
+
 
     }
 }
